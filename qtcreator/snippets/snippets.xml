@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+    <snippet group="C++" trigger="apiMethods" id="" complement="" removed="false" modified="false">
+class $method$Resource : public QtvApiResource
+{
+public:
+    void process()
+    {
+    }
+};
+
+class $method$Reply : public $parent$Reply
+{
+public:
+    $method$Reply(QtvAbstractApiRequest *request) :
+        $parent$Reply(request)
+    {
+    }
+
+    void process()
+    {
+    }
+
+private:
+};
+
+class $method$Request : public $parent$Request&lt;$method$Reply&gt;
+{
+public:
+    $method$Request() :
+        $parent$Request(&quot;$path$&quot;)
+    {
+    }
+};
+</snippet>
+    <snippet group="C++" trigger="apiValue" id="" complement="" removed="false" modified="false">m_$variable$ = value(&quot;$variable$&quot;).toString();$$</snippet>
+    <snippet group="C++" trigger="namespace" id="cpp_namespace" complement="" removed="false" modified="true">namespace $name$ {
+    $$
+} // namespace $name$</snippet>
+</snippets>
